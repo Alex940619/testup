@@ -1,0 +1,567 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A3F2A13B-DF5B-4CE3-912D-5FE0EFC1F974}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UPAdmPre.Web</RootNamespace>
+    <AssemblyName>UPAdmPre.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.60919.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UPAdmPre.SL\DLL\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.WebForms.10.0.40219.1\lib\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admision\frm11_EstudiosUniversitarios.aspx" />
+    <Content Include="Admision\frm13_OtrosEstudios.aspx" />
+    <Content Include="Admision\frm12_ExperienciaLaboral.aspx" />
+    <Content Include="Admision\frm15_BoletaPagos.aspx" />
+    <Content Include="Admision\frm17_ResumenFinal.aspx" />
+    <Content Include="Admision\frm19_DocAdiconales.aspx" />
+    <Content Include="Admision\frm18_Entrevista.aspx" />
+    <Content Include="Admision\frm20_FormalizaIng.aspx" />
+    <Content Include="Admision\frm21_ModalidadColegioPostula.aspx" />
+    <Content Include="Admision\frmResultadoEscala.aspx" />
+    <Content Include="Admision\frmRpt_ImprimirVoucher.aspx" />
+    <Content Include="Admision\frmVideoInformativo.aspx" />
+    <Content Include="DLLs\SimpleInjector.dll" />
+    <Content Include="Helper\UtilStepAdmision.js" />
+    <Content Include="Images\32x32_help.png" />
+    <Content Include="Images\Buttons\btnActualizar_Preform.png" />
+    <Content Include="Images\Buttons\btnEnviarExpediente.png" />
+    <Content Include="Images\Buttons\btnEnviarRojo_Entrevista.png" />
+    <Content Include="Images\Buttons\btnEnviarRojo_Eval.png" />
+    <Content Include="Images\Buttons\btnEnviarRojo_PrueCon.png" />
+    <Content Include="Images\Buttons\btnGuardarConsideracionesDisabled.png" />
+    <Content Include="Images\Buttons\btnGuardar_Preform.png" />
+    <Content Include="Images\Buttons\btnInscripcionEnabled.png" />
+    <Content Include="Images\Buttons\BtnRojo_EnviarHorarios.png" />
+    <Content Include="Images\Buttons\btn_EnviarExp_Azul.png" />
+    <Content Include="Images\conoce-tu-escala.png" />
+    <Content Include="Images\ConversionVigesimal.png" />
+    <Content Include="Images\dni_ubigeo.jpg" />
+    <Content Include="JavaScript\Webforms\frm04_DatoPersonal.js" />
+    <Content Include="JavaScript\Webforms\frm05_ColegioProcede.js" />
+    <Content Include="JavaScript\Webforms\frm09_InfoPadres.js" />
+    <Content Include="JavaScript\Webforms\frm20_FormalizaIng.js" />
+    <Content Include="JavaScript\Webforms\frm21_ModalidadColegioPostula.js" />
+    <Content Include="markup\pager\css\custom.css" />
+    <Content Include="markup\pager\css\font.css" />
+    <Content Include="markup\pager\css\paginador.css" />
+    <Content Include="markup\pager\error.html" />
+    <Content Include="markup\pager\fonts\aller\allerlight.svg" />
+    <Content Include="markup\pager\fonts\aller\aller_bd-webfont-webfont.svg" />
+    <Content Include="markup\pager\fonts\aller\aller_bdit-webfont-webfont.svg" />
+    <Content Include="markup\pager\fonts\aller\aller_it-webfont-webfont.svg" />
+    <Content Include="markup\pager\fonts\aller\aller_rg-webfont-webfont.svg" />
+    <Content Include="markup\pager\fonts\awesome\fontawesome-webfont.svg" />
+    <Content Include="markup\pager\img\barra-complete-current.jpg" />
+    <Content Include="markup\pager\img\barra-complete-first.png" />
+    <Content Include="markup\pager\img\barra-complete-last.png" />
+    <Content Include="markup\pager\img\barra-complete.jpg" />
+    <Content Include="markup\pager\img\barra-incomplete-last.png" />
+    <Content Include="markup\pager\img\barra-incomplete.jpg" />
+    <Content Include="markup\pager\img\check.png" />
+    <Content Include="markup\pager\js\tooltip.js" />
+    <Content Include="markup\pager\pager.html" />
+    <Content Include="Styles\css\custom.css" />
+    <Content Include="Styles\css\font.css" />
+    <Content Include="Styles\css\paginador.css" />
+    <Content Include="Images\Buttons\btnGuardar.png" />
+    <Content Include="Images\Buttons\btnInscripcion.png" />
+    <Content Include="Styles\img\barra-complete-current.jpg" />
+    <Content Include="Styles\img\barra-complete-first.png" />
+    <Content Include="Styles\img\barra-complete-last.png" />
+    <Content Include="Styles\img\barra-complete.jpg" />
+    <Content Include="Styles\img\barra-incomplete-last.png" />
+    <Content Include="Styles\img\barra-incomplete.jpg" />
+    <Content Include="Styles\img\check.png" />
+    <Content Include="Styles\js\tooltip.js" />
+    <Content Include="SessionExpired.aspx" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="Images\BannerUP.jpg" />
+    <Content Include="Images\Buttons\btnCancelar.png" />
+    <Content Include="Images\Buttons\btnDisabled.png" />
+    <Content Include="Images\Buttons\btnEditar.png" />
+    <Content Include="Images\Buttons\btnEnabled.png" />
+    <Content Include="Images\Buttons\btnEnviarEmail.png" />
+    <Content Include="Images\Buttons\btnNext.png" />
+    <Content Include="Images\Buttons\btnPrev.png" />
+    <Content Include="Images\icoAlerta.gif" />
+    <Content Include="Images\icoAprobado.png" />
+    <Content Include="Images\icoCancelar.png" />
+    <Content Include="Images\icoEditar.png" />
+    <Content Include="Images\icoEmail.png" />
+    <Content Include="Images\icoEnRevision.png" />
+    <Content Include="Images\icoObservado.png" />
+    <Content Include="Images\icoOk.jpg" />
+    <Content Include="Images\icoPendiente.png" />
+    <Content Include="Images\icoProgress.gif" />
+    <Content Include="Images\icoRevisado.png" />
+    <Content Include="Images\icoUpload.png" />
+    <Content Include="Images\ico_Add.png" />
+    <Content Include="Images\ico_Clear.png" />
+    <Content Include="Images\ico_DOC.png" />
+    <Content Include="Images\ico_JPG.png" />
+    <Content Include="Images\ico_PDF.png" />
+    <Content Include="Images\ImprimirCuponPago.png" />
+    <Content Include="Images\LogoBancos.png" />
+    <Content Include="Images\LogoDinersClub.jpg" />
+    <Content Include="Images\LogoTarjetas.png" />
+    <Content Include="Images\LogoUPAdmision.png" />
+    <Content Include="Images\PagoOnLine.png" />
+    <Content Include="packages.config" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="markup\pager\fonts\aller\allerlight.eot" />
+    <Content Include="markup\pager\fonts\aller\allerlight.ttf" />
+    <Content Include="markup\pager\fonts\aller\allerlight.woff" />
+    <Content Include="markup\pager\fonts\aller\allerlight.woff2" />
+    <Content Include="markup\pager\fonts\aller\aller_bd-webfont-webfont.eot" />
+    <Content Include="markup\pager\fonts\aller\aller_bd-webfont-webfont.ttf" />
+    <Content Include="markup\pager\fonts\aller\aller_bd-webfont-webfont.woff" />
+    <Content Include="markup\pager\fonts\aller\aller_bd-webfont-webfont.woff2" />
+    <Content Include="markup\pager\fonts\aller\aller_bd-webfont.ttf" />
+    <Content Include="markup\pager\fonts\aller\aller_bdit-webfont-webfont.eot" />
+    <Content Include="markup\pager\fonts\aller\aller_bdit-webfont-webfont.ttf" />
+    <Content Include="markup\pager\fonts\aller\aller_bdit-webfont-webfont.woff" />
+    <Content Include="markup\pager\fonts\aller\aller_bdit-webfont-webfont.woff2" />
+    <Content Include="markup\pager\fonts\aller\aller_bdit-webfont.ttf" />
+    <Content Include="markup\pager\fonts\aller\aller_it-webfont-webfont.eot" />
+    <Content Include="markup\pager\fonts\aller\aller_it-webfont-webfont.ttf" />
+    <Content Include="markup\pager\fonts\aller\aller_it-webfont-webfont.woff" />
+    <Content Include="markup\pager\fonts\aller\aller_it-webfont-webfont.woff2" />
+    <Content Include="markup\pager\fonts\aller\aller_it-webfont.ttf" />
+    <Content Include="markup\pager\fonts\aller\aller_rg-webfont-webfont.eot" />
+    <Content Include="markup\pager\fonts\aller\aller_rg-webfont-webfont.ttf" />
+    <Content Include="markup\pager\fonts\aller\aller_rg-webfont-webfont.woff" />
+    <Content Include="markup\pager\fonts\aller\aller_rg-webfont-webfont.woff2" />
+    <Content Include="markup\pager\fonts\aller\aller_rg-webfont.ttf" />
+    <Content Include="markup\pager\fonts\aller\aller_std_lt-webfont.ttf" />
+    <Content Include="markup\pager\fonts\awesome\fontawesome-webfont.eot" />
+    <Content Include="markup\pager\fonts\awesome\fontawesome-webfont.ttf" />
+    <Content Include="markup\pager\fonts\awesome\fontawesome-webfont.woff" />
+    <Content Include="markup\pager\fonts\awesome\fontawesome-webfont.woff2" />
+    <Content Include="markup\pager\fonts\awesome\FontAwesome.otf" />
+    <Content Include="Styles\fonts\aller\aller_bd-webfont-webfont.eot" />
+    <Content Include="Styles\fonts\aller\aller_bd-webfont-webfont.ttf" />
+    <Content Include="Styles\fonts\aller\aller_bd-webfont-webfont.woff" />
+    <Content Include="Styles\fonts\aller\aller_bd-webfont-webfont.woff2" />
+    <Content Include="Styles\fonts\aller\aller_bd-webfont.ttf" />
+    <Content Include="Styles\fonts\aller\aller_bdit-webfont-webfont.eot" />
+    <Content Include="Styles\fonts\aller\aller_bdit-webfont-webfont.ttf" />
+    <Content Include="Styles\fonts\aller\aller_bdit-webfont-webfont.woff" />
+    <Content Include="Styles\fonts\aller\aller_bdit-webfont-webfont.woff2" />
+    <Content Include="Styles\fonts\aller\aller_bdit-webfont.ttf" />
+    <Content Include="Styles\fonts\aller\aller_it-webfont-webfont.eot" />
+    <Content Include="Styles\fonts\aller\aller_it-webfont-webfont.ttf" />
+    <Content Include="Styles\fonts\aller\aller_it-webfont-webfont.woff" />
+    <Content Include="Styles\fonts\aller\aller_it-webfont-webfont.woff2" />
+    <Content Include="Styles\fonts\aller\aller_it-webfont.ttf" />
+    <Content Include="Styles\fonts\aller\aller_rg-webfont-webfont.eot" />
+    <Content Include="Styles\fonts\aller\aller_rg-webfont-webfont.ttf" />
+    <Content Include="Styles\fonts\aller\aller_rg-webfont-webfont.woff" />
+    <Content Include="Styles\fonts\aller\aller_rg-webfont-webfont.woff2" />
+    <Content Include="Styles\fonts\aller\aller_rg-webfont.ttf" />
+    <Content Include="Styles\fonts\aller\aller_std_lt-webfont.ttf" />
+    <Content Include="Styles\fonts\aller\allerlight.eot" />
+    <Content Include="Styles\fonts\aller\allerlight.ttf" />
+    <Content Include="Styles\fonts\aller\allerlight.woff" />
+    <Content Include="Styles\fonts\aller\allerlight.woff2" />
+    <Content Include="Styles\fonts\awesome\fontawesome-webfont.eot" />
+    <Content Include="Styles\fonts\awesome\fontawesome-webfont.ttf" />
+    <Content Include="Styles\fonts\awesome\fontawesome-webfont.woff" />
+    <Content Include="Styles\fonts\awesome\fontawesome-webfont.woff2" />
+    <Content Include="Styles\fonts\awesome\FontAwesome.otf" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admision\Facilidades.htm" />
+    <Content Include="Admision\frm03_ProgramasEPU.aspx" />
+    <Content Include="Admision\frm06_RendimientoAcademico.aspx" />
+    <Content Include="Admision\frm07_ActividadExtracurricular.aspx" />
+    <Content Include="Admision\frm09_InfoPadres.aspx" />
+    <Content Include="Admision\frm08_Idiomas.aspx" />
+    <Content Include="Admision\frm10_InfoReferencias.aspx" />
+    <Content Include="Admision\frm14_DocRequeridos.aspx" />
+    <Content Include="Admision\frm16_TerminosyCondiciones.aspx" />
+    <Content Include="Admision\frm05_ColegioProcede.aspx" />
+    <Content Include="Admision\frm04_DatoPersonal.aspx" />
+    <Content Include="Admision\frm02_ModalidadPostula.aspx" />
+    <Content Include="Admision\frm01_VideoIntro.aspx" />
+    <Content Include="frmMsjeErrorUP.aspx" />
+    <Content Include="DatosConexion.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Images\Buttons\btnCalendar.gif" />
+    <Content Include="Images\Buttons\btnMas.png" />
+    <Content Include="Images\Buttons\btnMenos.png" />
+    <Content Include="Images\Buttons\btnSearch.png" />
+    <Content Include="Images\Buttons\btnVideo.png" />
+    <Content Include="Images\calendar2.gif" />
+    <Content Include="Images\discapacidad.png" />
+    <Content Include="Images\ico_Alerta.gif" />
+    <Content Include="Images\ico_Error.gif" />
+    <Content Include="Images\ico_Required.gif" />
+    <Content Include="Images\ico_Delete.png" />
+    <Content Include="Images\ico_Documento.png" />
+    <Content Include="Images\ico_DownLoad.png" />
+    <Content Include="Images\ico_Upload.png" />
+    <Content Include="Images\loadingAnimation.gif" />
+    <Content Include="JavaScript\jquery-ui.js" />
+    <Content Include="JavaScript\jquery.js" />
+    <Content Include="JavaScript\jquery.validate.js" />
+    <Content Include="JavaScript\jquery.validationEngine-en.js" />
+    <Content Include="JavaScript\jquery.validationEngine.js" />
+    <Content Include="JavaScript\JS.js" />
+    <Content Include="JavaScript\json2.js" />
+    <Content Include="JavaScript\modalDoc.js" />
+    <Content Include="JavaScript\thickbox.js" />
+    <Content Include="Styles\Estilos.css" />
+    <Content Include="Styles\font-awesome.min.css" />
+    <Content Include="Styles\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Styles\jquery-ui.css" />
+    <Content Include="Styles\thickbox.css" />
+    <Content Include="Styles\Utilitarios.css" />
+    <Content Include="UserControl\cuwControlFecha.ascx" />
+    <Content Include="Video\ColdPlay-InMyPlace.mp4" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admision\frm20_FormalizaIng.aspx.cs">
+      <DependentUpon>frm20_FormalizaIng.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admision\frm20_FormalizaIng.aspx.designer.cs">
+      <DependentUpon>frm20_FormalizaIng.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admision\frm21_ModalidadColegioPostula.aspx.cs">
+      <DependentUpon>frm21_ModalidadColegioPostula.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admision\frm21_ModalidadColegioPostula.aspx.designer.cs">
+      <DependentUpon>frm21_ModalidadColegioPostula.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admision\frm03_ProgramasEPU.aspx.cs">
+      <DependentUpon>frm03_ProgramasEPU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admision\frm03_ProgramasEPU.aspx.designer.cs">
+      <DependentUpon>frm03_ProgramasEPU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admision\frm06_RendimientoAcademico.aspx.cs">
+      <DependentUpon>frm06_RendimientoAcademico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admision\frm06_RendimientoAcademico.aspx.designer.cs">
+      <DependentUpon>frm06_RendimientoAcademico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admision\frm07_ActividadExtracurricular.aspx.cs">
+      <DependentUpon>frm07_ActividadExtracurricular.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admision\frm07_ActividadExtracurricular.aspx.designer.cs">
+      <DependentUpon>frm07_ActividadExtracurricular.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admision\frm09_InfoPadres.aspx.cs">
+      <DependentUpon>frm09_InfoPadres.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admision\frm09_InfoPadres.aspx.designer.cs">
+      <DependentUpon>frm09_InfoPadres.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admision\frm08_Idiomas.aspx.cs">
+      <DependentUpon>frm08_Idiomas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admision\frm08_Idiomas.aspx.designer.cs">
+      <DependentUpon>frm08_Idiomas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admision\frm10_InfoReferencias.aspx.cs">
+      <DependentUpon>frm10_InfoReferencias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admision\frm10_InfoReferencias.aspx.designer.cs">
+      <DependentUpon>frm10_InfoReferencias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admision\frm14_DocRequeridos.aspx.cs">
+      <DependentUpon>frm14_DocRequeridos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admision\frm14_DocRequeridos.aspx.designer.cs">
+      <DependentUpon>frm14_DocRequeridos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admision\frm15_BoletaPagos.aspx.cs">
+      <DependentUpon>frm15_BoletaPagos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admision\frm15_BoletaPagos.aspx.designer.cs">
+      <DependentUpon>frm15_BoletaPagos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admision\frm16_TerminosyCondiciones.aspx.cs">
+      <DependentUpon>frm16_TerminosyCondiciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admision\frm16_TerminosyCondiciones.aspx.designer.cs">
+      <DependentUpon>frm16_TerminosyCondiciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admision\frm05_ColegioProcede.aspx.cs">
+      <DependentUpon>frm05_ColegioProcede.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admision\frm05_ColegioProcede.aspx.designer.cs">
+      <DependentUpon>frm05_ColegioProcede.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admision\frm04_DatoPersonal.aspx.cs">
+      <DependentUpon>frm04_DatoPersonal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admision\frm04_DatoPersonal.aspx.designer.cs">
+      <DependentUpon>frm04_DatoPersonal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admision\frm02_ModalidadPostula.aspx.cs">
+      <DependentUpon>frm02_ModalidadPostula.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admision\frm02_ModalidadPostula.aspx.designer.cs">
+      <DependentUpon>frm02_ModalidadPostula.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admision\frm01_VideoIntro.aspx.cs">
+      <DependentUpon>frm01_VideoIntro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admision\frm01_VideoIntro.aspx.designer.cs">
+      <DependentUpon>frm01_VideoIntro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admision\frm11_EstudiosUniversitarios.aspx.cs">
+      <DependentUpon>frm11_EstudiosUniversitarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admision\frm11_EstudiosUniversitarios.aspx.designer.cs">
+      <DependentUpon>frm11_EstudiosUniversitarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admision\frm13_OtrosEstudios.aspx.cs">
+      <DependentUpon>frm13_OtrosEstudios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admision\frm13_OtrosEstudios.aspx.designer.cs">
+      <DependentUpon>frm13_OtrosEstudios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admision\frm12_ExperienciaLaboral.aspx.cs">
+      <DependentUpon>frm12_ExperienciaLaboral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admision\frm12_ExperienciaLaboral.aspx.designer.cs">
+      <DependentUpon>frm12_ExperienciaLaboral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admision\frm19_DocAdiconales.aspx.cs">
+      <DependentUpon>frm19_DocAdiconales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admision\frm19_DocAdiconales.aspx.designer.cs">
+      <DependentUpon>frm19_DocAdiconales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admision\frm18_Entrevista.aspx.cs">
+      <DependentUpon>frm18_Entrevista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admision\frm18_Entrevista.aspx.designer.cs">
+      <DependentUpon>frm18_Entrevista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admision\frmResultadoEscala.aspx.cs">
+      <DependentUpon>frmResultadoEscala.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admision\frmResultadoEscala.aspx.designer.cs">
+      <DependentUpon>frmResultadoEscala.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admision\frmVideoInformativo.aspx.cs">
+      <DependentUpon>frmVideoInformativo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admision\frmVideoInformativo.aspx.designer.cs">
+      <DependentUpon>frmVideoInformativo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\UtilStepAdmision.cs" />
+    <Compile Include="SessionExpired.aspx.cs">
+      <DependentUpon>SessionExpired.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SessionExpired.aspx.designer.cs">
+      <DependentUpon>SessionExpired.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMsjeErrorUP.aspx.cs">
+      <DependentUpon>frmMsjeErrorUP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMsjeErrorUP.aspx.designer.cs">
+      <DependentUpon>frmMsjeErrorUP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admision\frm17_ResumenFinal.aspx.cs">
+      <DependentUpon>frm17_ResumenFinal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admision\frm17_ResumenFinal.aspx.designer.cs">
+      <DependentUpon>frm17_ResumenFinal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admision\frmRpt_ImprimirVoucher.aspx.cs">
+      <DependentUpon>frmRpt_ImprimirVoucher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admision\frmRpt_ImprimirVoucher.aspx.designer.cs">
+      <DependentUpon>frmRpt_ImprimirVoucher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControl\cuwControlFecha.ascx.cs">
+      <DependentUpon>cuwControlFecha.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\cuwControlFecha.ascx.designer.cs">
+      <DependentUpon>cuwControlFecha.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UPAdmPre.BE\UPAdmPre.BE.csproj">
+      <Project>{f50c19fe-e51e-4328-b738-3cffe1ed4f69}</Project>
+      <Name>UPAdmPre.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UPAdmPre.BL\UPAdmPre.BL.csproj">
+      <Project>{7312b61e-3793-4a8f-a956-2fd949bb9046}</Project>
+      <Name>UPAdmPre.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UPAdmPre.SL\UPAdmPre.SL.csproj">
+      <Project>{c8a5912b-b174-48b9-83b8-50b8984be0e2}</Project>
+      <Name>UPAdmPre.SL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reportes\RptImprimirVoucher.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\PublishProfiles\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2679</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2062/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

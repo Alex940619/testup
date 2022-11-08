@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<conexion>
+	<datasource>pr-pcampus8xbd</datasource>
+	<initialcatalog>pcampus_produccion</initialcatalog>
+	<userid>appnet_pcampus</userid>
+	<password>3$per0fUnk34hO9a</password>
+</conexion>
+<!--<conexion>
+	<datasource>de-pcampus8xbd</datasource>
+	<initialcatalog>PCAMPUS_PRODUCCION_20220212</initialcatalog>
+	<userid>autoservicio</userid>
+	<password>migrapc#28</password>
+</conexion>-->

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://sprnet.up.edu.pe/WSSpring/WSSpring.asmx?wsdl" docRef="http://sprnet.up.edu.pe/WSSpring/WSSpring.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://sprnet.up.edu.pe/WSSpring/WSSpring.asmx" xmlns:q1="http://royalsystems.net/" binding="q1:WSSpringSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://sprnet.up.edu.pe/WSSpring/WSSpring.asmx" xmlns:q2="http://royalsystems.net/" binding="q2:WSSpringSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

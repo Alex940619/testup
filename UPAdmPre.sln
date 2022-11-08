@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UPAdmPre.BE", "UPAdmPre.BE\UPAdmPre.BE.csproj", "{F50C19FE-E51E-4328-B738-3CFFE1ED4F69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UPAdmPre.BL", "UPAdmPre.BL\UPAdmPre.BL.csproj", "{7312B61E-3793-4A8F-A956-2FD949BB9046}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UPAdmPre.DL", "UPAdmPre.DL\UPAdmPre.DL.csproj", "{DEE320A0-944E-49AE-9A30-B6058CF8D0DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UPAdmPre.SL", "UPAdmPre.SL\UPAdmPre.SL.csproj", "{C8A5912B-B174-48B9-83B8-50B8984BE0E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UPAdmPre.Web", "UPAdmPre.Web\UPAdmPre.Web.csproj", "{A3F2A13B-DF5B-4CE3-912D-5FE0EFC1F974}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://srvtf2015:8080/tfs/webs
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = UPAdmPre.BE\\UPAdmPre.BE.csproj
+		SccProjectName1 = UPAdmPre.BE
+		SccLocalPath1 = UPAdmPre.BE
+		SccProjectUniqueName2 = UPAdmPre.BL\\UPAdmPre.BL.csproj
+		SccProjectName2 = UPAdmPre.BL
+		SccLocalPath2 = UPAdmPre.BL
+		SccProjectUniqueName3 = UPAdmPre.DL\\UPAdmPre.DL.csproj
+		SccProjectName3 = UPAdmPre.DL
+		SccLocalPath3 = UPAdmPre.DL
+		SccProjectUniqueName4 = UPAdmPre.SL\\UPAdmPre.SL.csproj
+		SccProjectName4 = UPAdmPre.SL
+		SccLocalPath4 = UPAdmPre.SL
+		SccProjectUniqueName5 = UPAdmPre.Web\\UPAdmPre.Web.csproj
+		SccProjectName5 = UPAdmPre.Web
+		SccLocalPath5 = UPAdmPre.Web
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F50C19FE-E51E-4328-B738-3CFFE1ED4F69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F50C19FE-E51E-4328-B738-3CFFE1ED4F69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F50C19FE-E51E-4328-B738-3CFFE1ED4F69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F50C19FE-E51E-4328-B738-3CFFE1ED4F69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7312B61E-3793-4A8F-A956-2FD949BB9046}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7312B61E-3793-4A8F-A956-2FD949BB9046}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7312B61E-3793-4A8F-A956-2FD949BB9046}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7312B61E-3793-4A8F-A956-2FD949BB9046}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEE320A0-944E-49AE-9A30-B6058CF8D0DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEE320A0-944E-49AE-9A30-B6058CF8D0DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEE320A0-944E-49AE-9A30-B6058CF8D0DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEE320A0-944E-49AE-9A30-B6058CF8D0DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8A5912B-B174-48B9-83B8-50B8984BE0E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8A5912B-B174-48B9-83B8-50B8984BE0E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8A5912B-B174-48B9-83B8-50B8984BE0E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8A5912B-B174-48B9-83B8-50B8984BE0E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3F2A13B-DF5B-4CE3-912D-5FE0EFC1F974}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3F2A13B-DF5B-4CE3-912D-5FE0EFC1F974}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3F2A13B-DF5B-4CE3-912D-5FE0EFC1F974}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3F2A13B-DF5B-4CE3-912D-5FE0EFC1F974}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F50C19FE-E51E-4328-B738-3CFFE1ED4F69}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UPAdmPre.BE</RootNamespace>
+    <AssemblyName>UPAdmPre.BE</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActividadBE.cs" />
+    <Compile Include="AplicanteBE.cs" />
+    <Compile Include="AvailableFileType.cs" />
+    <Compile Include="BEResultado.cs" />
+    <Compile Include="BEUtil.cs" />
+    <Compile Include="CalificacionBE.cs" />
+    <Compile Include="CertificadoBE.cs" />
+    <Compile Include="CursoConvalidacionFormalizacionBE.cs" />
+    <Compile Include="DocumentoBE.cs" />
+    <Compile Include="EducacionDetalleBE.cs" />
+    <Compile Include="DireccionAplicanteBE.cs" />
+    <Compile Include="EducacionBE.cs" />
+    <Compile Include="EmpleadorBE.cs" />
+    <Compile Include="EvaluacionBE.cs" />
+    <Compile Include="ExamenFormalizacionBE.cs" />
+    <Compile Include="IdiomaBE.cs" />
+    <Compile Include="InstitucionBE.cs" />
+    <Compile Include="InteresBE.cs" />
+    <Compile Include="ItemGeneralBE.cs" />
+    <Compile Include="LogAplicanteBE.cs" />
+    <Compile Include="NotasBE.cs" />
+    <Compile Include="OrganizacionBE.cs" />
+    <Compile Include="PostulanteBE.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReferenciaBE.cs" />
+    <Compile Include="RelacionBE.cs" />
+    <Compile Include="RendimientoAcademicoBE.cs" />
+    <Compile Include="RendimientoAcademicoCalificacionBE.cs" />
+    <Compile Include="RendimientoAcademicoCompetenciaBE.cs" />
+    <Compile Include="RendimientoAcademicoCursoBE.cs" />
+    <Compile Include="RendimientoAcademicoEvaluacionBE.cs" />
+    <Compile Include="RequisitoBE.cs" />
+    <Compile Include="ResultadoBE.cs" />
+    <Compile Include="RetornoBE.cs" />
+    <Compile Include="SAP\CamposAdicionalesBE.cs" />
+    <Compile Include="SAP\CamposAdicionalesListaBE.cs" />
+    <Compile Include="SAP\OVentaDetailBE.cs" />
+    <Compile Include="SAP\OVentaHeaderBE.cs" />
+    <Compile Include="SAP\SocioNegocioContactoBE.cs" />
+    <Compile Include="SAP\SocioNegocioContactoListaBE.cs" />
+    <Compile Include="SAP\SocioNegocioDireccionBE.cs" />
+    <Compile Include="SAP\SocioNegocioDireccionListaBE.cs" />
+    <Compile Include="SAP\SocioNegocioBE.cs" />
+    <Compile Include="TelefonoBE.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UPAdmPre.SL\UPAdmPre.SL.csproj">
+      <Project>{c8a5912b-b174-48b9-83b8-50b8984be0e2}</Project>
+      <Name>UPAdmPre.SL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

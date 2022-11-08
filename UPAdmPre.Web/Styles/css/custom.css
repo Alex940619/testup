@@ -1,0 +1,73 @@
+body{
+    background-color: #f1f1f1;
+    font-family:'allerregular';
+    font-size:16px;
+}
+.wrap{
+    width:718px;
+    margin:0 auto;
+    padding:10px;
+    border:1px solid #ededed;
+}
+
+.contenedor-mensaje{
+    width:75%;
+    margin: 0 auto;
+    border:#ededed;
+}
+.contenedor-mensaje .cabecera{
+    width:100%;
+    background-color:#F79125;
+    padding:15px;
+    color:#ffffff;
+    font-size:18px;
+    font-family:'allerlight';
+}
+.contenedor-mensaje .contenido{
+    padding:20px 10px; 
+}
+.contenedor-mensaje .contenido h3{
+    text-align:center;
+    font-size:22px;
+    color:#F79125;
+    font-weight:100;
+}
+.contenedor-mensaje .contenido p{
+    text-align:center;
+    color:gray;
+}
+.contenedor-mensaje .botones{
+    text-align:center;
+}
+.contenedor-mensaje .botones .btn{
+    display:inline-block;
+    padding:10px 15px;
+    border-radius:5px;
+    text-align:center;
+    text-decoration:none;
+    text-align:center
+}
+.contenedor-mensaje .botones .btn.btn-continuar{
+    background-color:#BFCA3E;
+    border:1px solid #ACC035;
+    color:#ffffff;
+}
+.contenedor-mensaje .botones .btn.btn-continuar:hover{
+    background-color:#b7c13c;
+    border:1px solid #b1bb3a;
+    color:#ffffff;
+}
+.contenedor-mensaje .botones .btn.btn-salir{
+    background-color:transparent;
+    border:1px solid #F79125;
+    color:#F79125;
+}
+
+.contenedor-mensaje .botones .btn.btn-salir:hover{
+    background-color:#F79125;
+    border:1px solid #F79125;
+    color:#ffffff;
+}
+
+/*BOTONES*/
+

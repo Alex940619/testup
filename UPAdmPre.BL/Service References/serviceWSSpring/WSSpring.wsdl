@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://royalsystems.net/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://royalsystems.net/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://royalsystems.net/">
+      <s:element name="WM_InsertarCliente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="str_pApellidoPaterno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="str_pApellidoMaterno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="str_pNombres" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="str_pRazonSocial" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="str_pTipoDocumento" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="str_pNumeroDocumento" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="str_pDocumentoFiscal" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="str_pFechaNacimiento" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="str_pDireccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="str_pCorreoElectronico" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="str_pTelefono" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="str_pPersonaAnterior" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="str_pClasePersona" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="str_pTipoDocumentoPago" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WM_InsertarClienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WM_InsertarClienteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WM_ListarCronogramaPagos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="str_pCentroCosto" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="str_pProyecto" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="str_pPeriodo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WM_ListarCronogramaPagosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WM_ListarCronogramaPagosResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WM_ListarDocumentosResumen">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="str_pCliente" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WM_ListarDocumentosResumenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WM_ListarDocumentosResumenResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WM_ListarDocumentosDetalle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="str_pCliente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="str_pCentroCosto" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="str_pProyecto" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WM_ListarDocumentosDetalleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WM_ListarDocumentosDetalleResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WM_TraerEstadoDeuda">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="str_pCliente" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WM_TraerEstadoDeudaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WM_TraerEstadoDeudaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WM_InsertarCobranza">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="str_pCodigoCompania" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="str_pCodigoCliente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="str_pFechaPreparacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="str_pCodigoCobrador" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="str_pCodigoCajero" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="str_pTipoDocumento" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="str_pNumeroDocumento" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="str_pMonedaPago" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="str_pMontoPagado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="str_pTipoPago" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="str_pDocumentoReferencia" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WM_InsertarCobranzaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WM_InsertarCobranzaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="WM_InsertarClienteSoapIn">
+    <wsdl:part name="parameters" element="tns:WM_InsertarCliente" />
+  </wsdl:message>
+  <wsdl:message name="WM_InsertarClienteSoapOut">
+    <wsdl:part name="parameters" element="tns:WM_InsertarClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="WM_ListarCronogramaPagosSoapIn">
+    <wsdl:part name="parameters" element="tns:WM_ListarCronogramaPagos" />
+  </wsdl:message>
+  <wsdl:message name="WM_ListarCronogramaPagosSoapOut">
+    <wsdl:part name="parameters" element="tns:WM_ListarCronogramaPagosResponse" />
+  </wsdl:message>
+  <wsdl:message name="WM_ListarDocumentosResumenSoapIn">
+    <wsdl:part name="parameters" element="tns:WM_ListarDocumentosResumen" />
+  </wsdl:message>
+  <wsdl:message name="WM_ListarDocumentosResumenSoapOut">
+    <wsdl:part name="parameters" element="tns:WM_ListarDocumentosResumenResponse" />
+  </wsdl:message>
+  <wsdl:message name="WM_ListarDocumentosDetalleSoapIn">
+    <wsdl:part name="parameters" element="tns:WM_ListarDocumentosDetalle" />
+  </wsdl:message>
+  <wsdl:message name="WM_ListarDocumentosDetalleSoapOut">
+    <wsdl:part name="parameters" element="tns:WM_ListarDocumentosDetalleResponse" />
+  </wsdl:message>
+  <wsdl:message name="WM_TraerEstadoDeudaSoapIn">
+    <wsdl:part name="parameters" element="tns:WM_TraerEstadoDeuda" />
+  </wsdl:message>
+  <wsdl:message name="WM_TraerEstadoDeudaSoapOut">
+    <wsdl:part name="parameters" element="tns:WM_TraerEstadoDeudaResponse" />
+  </wsdl:message>
+  <wsdl:message name="WM_InsertarCobranzaSoapIn">
+    <wsdl:part name="parameters" element="tns:WM_InsertarCobranza" />
+  </wsdl:message>
+  <wsdl:message name="WM_InsertarCobranzaSoapOut">
+    <wsdl:part name="parameters" element="tns:WM_InsertarCobranzaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WSSpringSoap">
+    <wsdl:operation name="WM_InsertarCliente">
+      <wsdl:input message="tns:WM_InsertarClienteSoapIn" />
+      <wsdl:output message="tns:WM_InsertarClienteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WM_ListarCronogramaPagos">
+      <wsdl:input message="tns:WM_ListarCronogramaPagosSoapIn" />
+      <wsdl:output message="tns:WM_ListarCronogramaPagosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WM_ListarDocumentosResumen">
+      <wsdl:input message="tns:WM_ListarDocumentosResumenSoapIn" />
+      <wsdl:output message="tns:WM_ListarDocumentosResumenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WM_ListarDocumentosDetalle">
+      <wsdl:input message="tns:WM_ListarDocumentosDetalleSoapIn" />
+      <wsdl:output message="tns:WM_ListarDocumentosDetalleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WM_TraerEstadoDeuda">
+      <wsdl:input message="tns:WM_TraerEstadoDeudaSoapIn" />
+      <wsdl:output message="tns:WM_TraerEstadoDeudaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WM_InsertarCobranza">
+      <wsdl:input message="tns:WM_InsertarCobranzaSoapIn" />
+      <wsdl:output message="tns:WM_InsertarCobranzaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSSpringSoap" type="tns:WSSpringSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="WM_InsertarCliente">
+      <soap:operation soapAction="http://royalsystems.net/WM_InsertarCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WM_ListarCronogramaPagos">
+      <soap:operation soapAction="http://royalsystems.net/WM_ListarCronogramaPagos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WM_ListarDocumentosResumen">
+      <soap:operation soapAction="http://royalsystems.net/WM_ListarDocumentosResumen" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WM_ListarDocumentosDetalle">
+      <soap:operation soapAction="http://royalsystems.net/WM_ListarDocumentosDetalle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WM_TraerEstadoDeuda">
+      <soap:operation soapAction="http://royalsystems.net/WM_TraerEstadoDeuda" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WM_InsertarCobranza">
+      <soap:operation soapAction="http://royalsystems.net/WM_InsertarCobranza" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSSpringSoap12" type="tns:WSSpringSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="WM_InsertarCliente">
+      <soap12:operation soapAction="http://royalsystems.net/WM_InsertarCliente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WM_ListarCronogramaPagos">
+      <soap12:operation soapAction="http://royalsystems.net/WM_ListarCronogramaPagos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WM_ListarDocumentosResumen">
+      <soap12:operation soapAction="http://royalsystems.net/WM_ListarDocumentosResumen" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WM_ListarDocumentosDetalle">
+      <soap12:operation soapAction="http://royalsystems.net/WM_ListarDocumentosDetalle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WM_TraerEstadoDeuda">
+      <soap12:operation soapAction="http://royalsystems.net/WM_TraerEstadoDeuda" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WM_InsertarCobranza">
+      <soap12:operation soapAction="http://royalsystems.net/WM_InsertarCobranza" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSSpring">
+    <wsdl:port name="WSSpringSoap" binding="tns:WSSpringSoap">
+      <soap:address location="http://sprnet.up.edu.pe/WSSpring/WSSpring.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSSpringSoap12" binding="tns:WSSpringSoap12">
+      <soap12:address location="http://sprnet.up.edu.pe/WSSpring/WSSpring.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
