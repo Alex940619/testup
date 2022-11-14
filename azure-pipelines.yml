@@ -8,7 +8,7 @@ trigger:
 
 pool:
   name: Agentes Universidad del Pacífico
-
+  agent: SRV-DOPCI
 
 variables:
   solution: '**/*.sln'
